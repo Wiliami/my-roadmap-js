@@ -4,7 +4,6 @@
 //     console.log('Testando o if');
 // }
 
-
 // console.log('Depois do if');
 
 
@@ -22,11 +21,20 @@
 
 
 // Testando a condição
-if(false) {
-    console.log('Testando o if');
-}
+// if(true) {
+//     console.log('Testando o if');
+// }
 
 // Testando o if com uma condição
 // if(1 + 1 == 2) {
 //     console.log('Testando o if');
 // }
+
+const meuArrayIncrivel = [5, 4, 3, 2, 1];
+console.log(meuArrayIncrivel);
+
+// const resultado = meuArrayIncrivel.map(x => x * x);
+const resultado = meuArrayIncrivel.forEach(x => console.log('Acessando o ForEach', x));
+// meuArrayIncrivel.forEach(x => x * x);
+
+console.log(resultado);
