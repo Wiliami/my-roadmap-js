@@ -1,10 +1,10 @@
-const data = [
-	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: "Frontend", bonus: 0},
-	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: "Backend", bonus: 0},
-	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: "Mobile", bonus: 0},
-	{name: 'Bauer', age: 28, salary: 3500, active: true, team: "Frontend", bonus: 0},
-	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: "Mobile", bonus: 0},
-];
+// const data = [
+// 	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: "Frontend", bonus: 0},
+// 	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: "Backend", bonus: 0},
+// 	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: "Mobile", bonus: 0},
+// 	{name: 'Bauer', age: 28, salary: 3500, active: true, team: "Frontend", bonus: 0},
+// 	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: "Mobile", bonus: 0},
+// ];
 
 // Find
 // const user = data.find(user => {
@@ -67,7 +67,31 @@ const data = [
 
 
 // Reduce
-const totalSalarios = data.reduce((total, user) => {
-	return total += user.salary; 
-}, 0);
-console.log(totalSalarios);
+// const totalSalarios = data.reduce((total, user) => {
+// 	return total += user.salary; 
+// }, 0);
+// console.log(totalSalarios);
+
+
+// ForEach
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = []; // novo array fora da iteração
+
+numbers.forEach((number) => {
+	doubledNumbers.push(number * 2);
+});
+
+console.log(doubledNumbers);
+
+// obs: Não retorna um novo array
+
+
+
+// Map
+// const numbers = [1, 2, 3, 4, 5];
+
+// const doubleNumbers = numbers.map((number) => {
+// 	return number * 2;
+// });
+
+// console.log(doubleNumbers);
