@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Nome do país: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+
+    <script>
+        function verificar() {
+            var país = document.getElementById('txtp').value;
+            var res = document.getElementById('res');
+            
+            res.innerHTML = `<p>Nome do seu país é <strong>${país}.</strong></p>`;
+
+            if(país != 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>estrangeiro.</strong></p>`;
+            } else {
+                res.innerHTML += `<p>Você é <strong>brasileiro(a).</strong>
+                    <a href='https://www.google.com/search?q=brasil&oq=brasil&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxjjAhiKBTIMCAAQIxgnGOMCGIoFMgkIARAuGCcYigUyBggCEEUYOzIGCAMQRRg7MgYIBBBFGEEyBggFEEUYPDIGCAYQRRg8MgYIBxBFGEHSAQgxMDExajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'>Brasil BR<a/>
+                </p>`
+            }
+        }
+    </script>
+
+</body>
+</html>
