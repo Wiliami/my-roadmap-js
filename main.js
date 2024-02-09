@@ -20,15 +20,3 @@ function getData(url) {
 }
 
 getData(apiURL);
-
-/**
- * 
- * @param {string} text 
- */
-function writeScreenText(text) {
-    console.log(text);  
-}
-
-writeScreenText('Olá, mundo!');
-writeScreenText('Eu me chamo Wiliamis');
-writeScreenText('Sou desenvolvedor web');
