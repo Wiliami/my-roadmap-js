@@ -20,3 +20,21 @@ function getData(url) {
 }
 
 getData(apiURL);
+
+
+function getDataGithub(url) {
+    fetch(url)
+    .then(response => {
+        if(!response.ok) {
+            throw new Error(`Error na solicitação: ${response.statusText}`);
+        }
+    })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.log('Error:', error);
+    });
+}
+
+getDataGithub(apiURL);
