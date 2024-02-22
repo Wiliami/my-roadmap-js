@@ -16,8 +16,9 @@ var nome = 'Sampaio';
 
 /* Var - Hoisting */
 function retornaNome() {
-    var nome = 'Wiliamis';
+    nome = 'Wiliamis';
     return nome; 
 }
 
+retornaNome();
 console.log(nome);
