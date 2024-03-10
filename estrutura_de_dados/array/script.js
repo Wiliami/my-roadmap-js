@@ -1,16 +1,17 @@
+/* eslint-disable indent */
 const data = [
-	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: "Frontend", bonus: 0},
-	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: "Backend", bonus: 0},
-	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: "Mobile", bonus: 0},
-	{name: 'Bauer', age: 28, salary: 3500, active: true, team: "Frontend", bonus: 0},
-	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: "Mobile", bonus: 0},
+	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: 'Frontend', bonus: 0},
+	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: 'Backend', bonus: 0},
+	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: 'Mobile', bonus: 0},
+	{name: 'Bauer', age: 28, salary: 3500, active: true, team: 'Frontend', bonus: 0},
+	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: 'Mobile', bonus: 0},
 ];
 
 /* Find */
 const user = data.find(user => {
-	return user.salary >= 4000
+	return user.salary >= 4000;
 });
-console.log(user);
+// console.log(user);
 
 
 /* Filter */
@@ -177,10 +178,10 @@ console.log(user);
 
 
 const users = [
-    { name: "Wiliamis", age: 26, gender: "Masculino" },
-    { name: "Teste", age: 25, gender: "Masculino" },
-    { name: "Admin", age: 24, gender: "Masculino" },
-    { name: "Teste1", age: 23, gender: "Feminino" }
+    { name: 'Wiliamis', age: 26, gender: 'Masculino' },
+    { name: 'Teste', age: 25, gender: 'Masculino' },
+    { name: 'Admin', age: 24, gender: 'Masculino' },
+    { name: 'Teste1', age: 23, gender: 'Feminino' },
 ];
 
 // const result = users.find((user) => {
@@ -188,8 +189,14 @@ const users = [
 // });
 
 const result = users.filter(user => {
-    return user.age >= 25 && user.gender === "Masculino";
+    return user.age >= 25 && user.gender === 'Masculino';
+});
+
+
+const female = users.filter(user => {
+	return user.gender === 'Feminino;';
 });
 
 
 console.log(result);
+console.log('Female:', female);
