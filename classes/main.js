@@ -1,40 +1,37 @@
-/* Programação Imperativa */
-// let a = 1;
-// let b = 2;
+class Pessoa {
+    #nome
+    idade
 
-// function soma() {
-//     return a + b;
-// }
-// console.log(soma());
+    constructor(nome, idade) {  
+        this.#nome = nome;
+        this.idade = idade;
+    };
 
-
-/**
- * 
- * @param {number} a 
- * @param {number} b 
- * @returns 
- */
-// /* Programação funcional */
-// function soma(a, b) {
-//     return a + b;
-// }
-
-// console.log(soma(1, 1));
-
-
-
-
-
-function somaNaturais(n) {
-    if(n === 1) {
-        return 1;
-    } else {
-        return n + somaNaturais(n - 1);
+    get nome() {
+        return this.#nome;
     }
+
+
+    set nome(nome) {
+        this.#nome = nome;
+    }
+
+    apresentar() {
+        return `O meu nome é ${this.nome} e tenho ${this.idade} anos`;
+    }
+    
 }
 
 
-console.log(somaNaturais(2));
+const p1 = new Pessoa('Wiliamis', 26);
+console.log(p1.nome = 'Ana');
+// console.log(p1.idade);
+// console.log(JSON.stringify(p1));
+// console.log('Chaves:', Object.keys(p1));
+// console.log('Valores:', Object.values(p1));
+// console.log(p1.apresentar());
 
-const hello = 'Hello World!';
-document.write(hello);
+
+// for(let attrib in p1) {
+//     console.log(p1[attrib], attrib);
+// }
