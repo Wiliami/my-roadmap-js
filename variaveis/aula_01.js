@@ -1,24 +1,41 @@
-/* 1.Declaração 2. Redeclaração 3.Hoisting */
+/* 1.Escopo 2. Redeclaração 3.Hoisting */
 
-/* Scope */
+/* Escopo */
 // 1. Local
 // 2. Global
 
+
+
+/* ------------------------------*/
 /* Cada função cria o seu próprio escopo */
-
-/* Var - declaração */
-var nome = 'Wiliamis';
-// Output: Wiliamis
-
-
-/* Var - redeclaração */
-var nome = 'Sampaio';
-
-/* Var - Hoisting */
 function retornaNome() {
-    nome = 'Wiliamis';
-    return nome; 
+    var nome = 'Wiliamis';
+    return nome;
 }
 
-retornaNome();
-console.log(nome);
+retornaNome(); // Wiliamis
+// console.log(nome) // nome is not defined;
+
+
+
+
+
+/* ------------------------------*/
+// /* Var - Redeclaração */
+// var nome = 'Sampaio';
+// var nome = 'Pontes';
+// Sempre a última declaração será usada
+
+
+
+
+
+/* ------------------------------*/
+// /* Var - Hoisting */
+// function retornaNome() {
+//     nome = 'Wiliamis';
+//     return nome; 
+// }
+
+// retornaNome();
+// console.log(nome);
