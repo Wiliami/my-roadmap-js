@@ -4,5 +4,13 @@ class HellWorld {
     }
 }
 
-
 HellWorld.message();
+
+
+class Main {
+    static helloWorld() {
+        console.log('Hello World!');
+    }
+}
+
+Main.helloWorld();
