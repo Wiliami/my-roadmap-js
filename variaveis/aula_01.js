@@ -16,17 +16,11 @@ retornaNome(); // Wiliamis
 // console.log(nome) // nome is not defined;
 
 
-
-
-
 /* ------------------------------*/
 // /* Var - Redeclaração */
 // var nome = 'Sampaio';
 // var nome = 'Pontes';
 // Sempre a última declaração será usada
-
-
-
 
 
 /* ------------------------------*/
