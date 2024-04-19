@@ -1,9 +1,8 @@
-/* 1.Escopo 2. Redeclaração 3.Hoisting */
+/* 1.Declaração 2. Redeclaração 3.Hoisting */
 
 /* Escopo */
 // 1. Local
 // 2. Global
-
 
 
 /* ------------------------------*/
