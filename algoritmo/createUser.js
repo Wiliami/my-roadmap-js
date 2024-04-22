@@ -1,12 +1,12 @@
 function createUser(user) {
     const users = [];
-
     users.push(user);
-    return users;
+
+    console.log(users);
 }
 
 
-createUser('Wiliamis');
-
-
-console.log(result);
+createUser('JS');
+createUser('Java');
+createUser('Python');
+createUser('Cobol');
