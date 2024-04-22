@@ -9,3 +9,4 @@ function createUser(user) {
 createUser('JS');
 createUser('Java');
 createUser('Python');
+createUser('Cobol');
