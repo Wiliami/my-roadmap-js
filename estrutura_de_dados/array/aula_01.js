@@ -182,6 +182,7 @@ const users = [
     { name: 'Teste', age: 25, gender: 'Masculino' },
     { name: 'Admin', age: 24, gender: 'Masculino' },
     { name: 'Teste1', age: 23, gender: 'Feminino' },
+	{ name: 'Teste 2', age: 27, gender: 'Feminino'}
 ];
 
 // const result = users.find((user) => {
@@ -193,10 +194,16 @@ const result = users.filter(user => {
 });
 
 
-const female = users.filter(user => {
+const females = users.filter(user => {
 	return user.gender === 'Feminino;';
 });
 
+const mens = users.filter(user => {
+	return user.gender === 'Masculino';
+});
 
-console.log(result);
-console.log('Female:', female);
+
+
+// console.log(result);
+console.log('Feminino:', females);
+console.log('Masculino:', mens);
