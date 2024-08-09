@@ -17,3 +17,5 @@ const minhaConta = new ContaBancaria();
 console.log(minhaConta.obterSaldo);
 
 
+export default ContaBancaria;
+
