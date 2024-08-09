@@ -2,10 +2,11 @@
   "name": "roadmap-js",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "node --watch --no-warnings index.js"
   },
   "keywords": [],
   "author": "",
