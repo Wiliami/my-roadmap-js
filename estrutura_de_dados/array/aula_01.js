@@ -1,16 +1,16 @@
 /* eslint-disable indent */
-const data = [
-	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: 'Frontend', bonus: 0},
-	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: 'Backend', bonus: 0},
-	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: 'Mobile', bonus: 0},
-	{name: 'Bauer', age: 28, salary: 3500, active: true, team: 'Frontend', bonus: 0},
-	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: 'Mobile', bonus: 0},
-];
+// const data = [
+// 	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: 'Frontend', bonus: 0},
+// 	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: 'Backend', bonus: 0},
+// 	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: 'Mobile', bonus: 0},
+// 	{name: 'Bauer', age: 28, salary: 3500, active: true, team: 'Frontend', bonus: 0},
+// 	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: 'Mobile', bonus: 0},
+// ];
 
 /* Find */
-const user = data.find(user => {
-	return user.salary >= 4000;
-});
+// const user = data.find(user => {
+// 	return user.salary >= 4000;
+// });
 // console.log(user);
 
 
@@ -177,33 +177,40 @@ const user = data.find(user => {
 
 
 
-const users = [
-    { name: 'Wiliamis', age: 26, gender: 'Masculino' },
-    { name: 'Teste', age: 25, gender: 'Masculino' },
-    { name: 'Admin', age: 24, gender: 'Masculino' },
-    { name: 'Teste1', age: 23, gender: 'Feminino' },
-	{ name: 'Teste 2', age: 27, gender: 'Feminino'}
-];
+// const users = [
+//     { name: 'Wiliamis', age: 26, gender: 'Masculino' },
+//     { name: 'Teste', age: 25, gender: 'Masculino' },
+//     { name: 'Admin', age: 24, gender: 'Masculino' },
+//     { name: 'Teste1', age: 23, gender: 'Feminino' },
+// 	{ name: 'Teste 2', age: 27, gender: 'Feminino'}
+// ];
 
 // const result = users.find((user) => {
 // 	return user.age >= 25; 
 // });
 
-const result = users.filter(user => {
-    return user.age >= 25 && user.gender === 'Masculino';
-});
+// const result = users.filter(user => {
+//     return user.age >= 25 && user.gender === 'Masculino';
+// });
 
 
-const females = users.filter(user => {
-	return user.gender === 'Feminino;';
-});
+// const females = users.filter(user => {
+// 	return user.gender === 'Feminino;';
+// });
 
-const mens = users.filter(user => {
-	return user.gender === 'Masculino';
-});
+// const mens = users.filter(user => {
+// 	return user.gender === 'Masculino';
+// });
 
 
 
 // console.log(result);
-console.log('Feminino:', females);
-console.log('Masculino:', mens);
+// console.log('Feminino:', females);
+// console.log('Masculino:', mens);
+
+
+// const numeros = [10, 20, 30, 40, 50, 60]; // vetor de uma dimensão
+
+// for(let i = 10; i < numeros.length; i++) {
+// 	console.log(numeros[i]);
+// }
