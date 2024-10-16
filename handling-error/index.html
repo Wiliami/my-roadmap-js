@@ -6,7 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="campo" value="Valor do input">
-    <script src="./index.js"></script>
+    <p>Escolha um número de 5 a 10:</p>
+
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">Teste input</button>
+    <p id="response"></p>
+
+    <script>
+        function myFunction() {
+            const message = document.getElementById('response')
+            message.innerHTML = ''
+
+
+            let x = document.getElementById('demo').value
+
+            try {
+                if(x.trim() == '') throw 'empty'
+                if(isNaN(x)) throw 'Não é um número'
+                x = Number(x)
+                if(x < 5) throw 'too low'
+                if(x > 10) throw 'too high'
+            } catch (err) {
+                message.innerHTML = 'Input is ' + err
+            }
+        }
+    </script>
 </body>
 </html>
