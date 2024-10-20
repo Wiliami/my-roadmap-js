@@ -19,11 +19,11 @@
 // var cores = ['amarelo', 'verde', 'azul', 'branco', 'vermelho'];
 const cores = {};
 
-    if(cores.length == 0 && cores == {}) {
-        console.log('Array vazio ou formato de dados não permitido');
-    } else {
-        console.log(cores);
-    }
+if(cores.length == 0 && cores == {}) {
+    console.log('Array vazio ou formato de dados não permitido');
+} else {
+    console.log(cores);
+}
 
 
 // for(i; i <= 4; i++) {
