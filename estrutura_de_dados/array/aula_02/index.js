@@ -16,11 +16,16 @@
 // });
 
 
-var cores = ['amarelo', 'verde', 'azul', 'branco', 'vermelho'];
+// var cores = ['amarelo', 'verde', 'azul', 'branco', 'vermelho'];
+const cores = {};
 
-// console.log(cores.length);
+    if(cores.length == 0 && cores == {}) {
+        console.log('Array vazio ou formato de dados não permitido');
+    } else {
+        console.log(cores);
+    }
 
 
-for(i=0; i <= 4; i++) {
-    console.log(cores[0]);
-}
+// for(i; i <= 4; i++) {
+//     console.log(cores[0]);
+// }
