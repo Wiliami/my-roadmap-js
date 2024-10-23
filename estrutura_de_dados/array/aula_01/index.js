@@ -1,11 +1,11 @@
 /* eslint-disable indent */
-// const data = [
-// 	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: 'Frontend', bonus: 0},
-// 	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: 'Backend', bonus: 0},
-// 	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: 'Mobile', bonus: 0},
-// 	{name: 'Bauer', age: 28, salary: 3500, active: true, team: 'Frontend', bonus: 0},
-// 	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: 'Mobile', bonus: 0},
-// ];
+const data = [
+	{name: 'Sujeito', age: 23, salary: 4000, active: true, team: 'Frontend', bonus: 0},
+	{name: 'Sheldon', age: 16, salary: 3000, active: true, team: 'Backend', bonus: 0},
+	{name: 'Ana Clara', age: 32, salary: 6000, active: false, team: 'Mobile', bonus: 0},
+	{name: 'Bauer', age: 28, salary: 3500, active: true, team: 'Frontend', bonus: 0},
+	{name: 'Matheus', age: 	22, salary: 2500, active: false, team: 'Mobile', bonus: 0},
+];
 
 /* Find */
 // const user = data.find(user => {
