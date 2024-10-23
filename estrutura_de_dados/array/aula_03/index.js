@@ -8,9 +8,9 @@ const employes = [
     { name: 'Juliana Santos', age: 19, salary: 1200, active: false, team: 'frontend'}
 ];
 
-employes.forEach(employe => {
-    console.log(employe);
-});
+// employes.forEach(employe => {
+//     console.log(employe);
+// });
 
 
 const result = employes.find((user, index) => {
@@ -42,3 +42,19 @@ const users = employes.map((user, index) => {
 
 // console.log(users);
 
+const array = [1, 2, 3, 4, 5];
+
+
+const soma = array.reduce((acc, item) => {
+    document.body.innerText += acc + ',' + item + ' --- ';
+
+    return acc + item;
+    // acc = 0, item = 1
+    // acc = 1, item = 2
+    // acc = 3, item = 3
+    // acc = 6, item = 4
+    // acc = 10, item = 5
+
+}, 0);
+
+// document.body.innerText = soma;
