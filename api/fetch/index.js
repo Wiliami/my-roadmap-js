@@ -4,18 +4,16 @@
 // passando o Id do recurso dinamicamente
 async function getData(userId) {
     try {
-        const url = `https://dummyjson.com/users/${userId}`
-        const response = await fetch(url)
-        //console.log(response)
+        const dummyJSON_API = `https://dummyjson.com/users/${userId}`
+        const github_API = 'https://api.github.com/users/wiliami'
+
+        const response = await fetch(github_API)
+        // console.log(response)
 
         if(response.status === 200) {
-            const { id, firstName, age, gender, email  } = await response.json()
+            const { user_url } = await response.json()
             console.log({
-                id,
-                firstName,
-                age,
-                gender,
-                email
+                user_url
             })
         } else  {
             console.error('Erro ao buscar dados')
