@@ -11,9 +11,10 @@ async function getData(userId) {
         // console.log(response)
 
         if(response.status === 200) {
-            const { user_url } = await response.json()
+            const { name, bio } = await response.json()
             console.log({
-                user_url
+                name,
+                bio
             })
         } else  {
             console.error('Erro ao buscar dados')
