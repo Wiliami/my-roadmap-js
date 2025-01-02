@@ -7,7 +7,7 @@ const users = [
 for(user of users) {
     console.log(user)
 }
-
+console.log(user)
 
 for(user of users) {
     console.log(user.name[0])
@@ -131,4 +131,3 @@ function sum(...values) {
 }
 
 sum(1, 2, 3)
-6
