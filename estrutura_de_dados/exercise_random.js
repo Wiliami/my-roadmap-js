@@ -134,8 +134,16 @@ sum(1, 2, 3)
 
 
 const youtubers = [
-    { nameChanel: 'Kipper dev', email: 'kipper.dev@gmail.com',age: 23, status: 'Ativo' },
+    { name: 'Kipper dev', email: 'kipper.dev@gmail.com',age: 23, status: 'Ativo' },
     { name: 'Mário Souto',email: 'dev.sotuinho@gmaii.com', age: 23, status: 'Ativo' },
     { name: 'Filipe Deschamps', email: 'deschamps@gmail.com',age: 23, status: 'Ativo' },
-    { name: 'Lucas Montano', email: '',age: 23, status: 'Ativo' },
+    { name: 'Lucas Montano', email: 'lucas.omontano',age: 23, status: 'Ativo' },
 ]
+
+function addUsers(...users) {
+    const userList = [];
+    users.reduce((user) => usersList.push(user))
+}
+// teste pra ver se esse código funciona
+
+
