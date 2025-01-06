@@ -146,4 +146,13 @@ function addUsers(...users) {
 }
 // teste pra ver se esse código funciona
 
+function createUser(...data) {
+    const userList = []
+    return data.reduce((user) => {
+        user.push(userList)
+    })
+}
+
+// Testar essa função
+
 
