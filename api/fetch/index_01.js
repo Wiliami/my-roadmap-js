@@ -5,19 +5,20 @@
 async function getData(userId) {
     try {
         const dummyJSON_API = `https://dummyjson.com/users/${userId}`
-        const github_API = 'https://api.github.com/users/wiliami'
+        const github_API = 'https://api.github.com/users/Wiliami/repos/596434678'
 
         const response = await fetch(github_API)
-        // console.log(response)
+        console.log(response.ok)
 
-        if(response.status === 200) {
-            const { name, bio } = await response.json()
+        if(response.ok) {
+            const { node_id, name, full_name } = await response.json()
             console.log({
+                node_id,
                 name,
-                bio
+                full_name
             })
         } else  {
-            console.error('Erro ao buscar dados')
+            console.error('Erro ao buscar dados: ', response.status)
         }
         
     } catch (err) {
