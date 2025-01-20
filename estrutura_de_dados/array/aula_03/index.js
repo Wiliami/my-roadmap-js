@@ -58,3 +58,23 @@ const soma = array.reduce((acc, item) => {
 }, 0);
 
 // document.body.innerText = soma;
+
+function sum(...values) {
+    return values.reduce((a, b ) => a + b)
+}
+
+function sub(...values) {
+    return values.reduce((a, b) => a - b)
+}
+
+function multiplicator(...values) {
+    return values.reduce((a, b) => a * b)
+}
+
+function divider(values) {
+    return values.reduce((a, b) => a / b)
+}
+console.log(sum(1, 2)) // 3
+console.log(sub(1, 2)) // -1
+console.log(multiplicator(1, 2)) // 2
+console.log(divider(1, 2)) // 1
