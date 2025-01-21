@@ -29,3 +29,13 @@ if(cores.length == 0 && cores == {}) {
 // for(i; i <= 4; i++) {
 //     console.log(cores[0]);
 // }
+
+
+// const meuArrayIncrivel = [5, 4, 3, 2, 1];
+// console.log(meuArrayIncrivel);
+
+// // const resultado = meuArrayIncrivel.map(x => x * x);
+// const resultado = meuArrayIncrivel.forEach(x => console.log('Acessando o ForEach', x));
+// // meuArrayIncrivel.forEach(x => x * x);
+
+// console.log(resultado);
