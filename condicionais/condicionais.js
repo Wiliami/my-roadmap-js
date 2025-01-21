@@ -32,5 +32,42 @@
 
 
 
+// let dayOfWeek = undefined
+
+// if(day === 'domingo') {
+//     dayOfWeek = 1;
+// } else if(day === 'segunda-feira') {
+//     dayOfWeek = 2;
+// } else if(day === 'terça-feira') {
+//     dayOfWeek = 3;
+// } else if(day === 'quarta-feira') {
+//     dayOfWeek = 4;
+// } else if(day === 'quinta-feira') {
+//     dayOfWeek = 5;
+// } else if(day === 'sexta-feira') {
+//     dayOfWeek = 6;
+// } else if(day === 'sábado') {
+//     dayOfWeek = 7;
+// } else {
+//     dayOfWeek = 'Dia inválido';
+// }
+
+// console.log(dayOfWeek)
+
+const day = 'segunda-feira'
+
+const dayObject = {
+    'domingo': 1,
+    'segunda-feira': 2,
+    'terça-feira': 3,
+    'quarta-feira': 4,
+    'quinta-feira ': 5, 
+    'sexta-feira': 6,
+    'sábado': 7
+}
+
+let dayOfWeek = dayObject['quinta-feira'] || -1;
+
+console.log(dayOfWeek)
 
 
