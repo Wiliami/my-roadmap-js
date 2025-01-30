@@ -17,3 +17,8 @@ function sum(...numbers) {
     return numbers.reduce((a, b) => a + b) 
 }
 console.log(sum(10, 20))
+
+
+function sum(a, b) {
+    return a + b
+}
