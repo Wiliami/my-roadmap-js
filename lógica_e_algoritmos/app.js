@@ -23,9 +23,3 @@
 // }
 
 // btnCalcular.addEventListener('click', mostraTabuada);
-
-
-
-
-const myNumber = Number('1223')
-console.log(myNumber)
