@@ -23,3 +23,29 @@
 // }
 
 // btnCalcular.addEventListener('click', mostraTabuada);
+
+
+
+// Verificar se número PAR ou ÍMPAR
+function verifYNumber(number) {
+  
+  if((number < 0 || number == '') || isNAN(number) {
+    alert('O número precisar ser positivo.')
+    return;
+  } else if(number % 2 !== 0) {
+    console.log(`O número ${number} é ÍMPAR.`)
+  } else {
+    console.log(`O número ${number} é PAR.`)
+  }
+} 
+
+veriyNumber(1) // ÌMPAR
+veriyNumber(2) // PAR
+veriyNumber(3) // ÌMPAR
+veriyNumber(4) // PAR
+
+
+
+
+
+
