@@ -29,7 +29,7 @@
 // Verificar se número PAR ou ÍMPAR
 function verifYNumber(number) {
   
-  if((number < 0 || number == '') || isNAN(number) {
+  if((number < 0 || number == '') || isNaN(number) {
     alert('O número precisar ser positivo.')
     return;
   } else if(number % 2 !== 0) {
