@@ -32,10 +32,10 @@ function verifYNumber(number) {
   if((number < 0 || number == '') || isNaN(number) {
     alert('O número precisar ser positivo.')
     return;
-  } else if(number % 2 !== 0) {
-    console.log(`O número ${number} é ÍMPAR.`)
-  } else {
+  } else if(number % 2 === 0) {
     console.log(`O número ${number} é PAR.`)
+  } else {
+    console.log(`O número ${number} é ÍMPAR.`)
   }
 } 
 
@@ -43,9 +43,3 @@ veriyNumber(1) // ÌMPAR
 veriyNumber(2) // PAR
 veriyNumber(3) // ÌMPAR
 veriyNumber(4) // PAR
-
-
-
-
-
-
