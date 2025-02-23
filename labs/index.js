@@ -1,5 +1,4 @@
 // console.log("Hello world");
-
 /* Testando a feat decorator JS*/
 function log() {
   return "Hello World";
