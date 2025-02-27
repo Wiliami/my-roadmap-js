@@ -1,16 +1,11 @@
-const inputNumero = document.getElementyId("inputNumero");
-const btnNumeroDecrescente = document.getElementyId("btnNumeroDecrescente");
-const outNumero = document.getElementyId("outNumero");
+const inputNumero = document.getElementId("inputNumero");
+const btnNumeroDecrescente = document.getElementId("btnNumeroDecrescente");
+const outNumero = document.getElementId("outNumero");
 
-// Numero dentro do input
-// 1
-// inputNumero.value // string
-// value // string === number
+/* inputNumero.value // retorna uma string */
+// 10f => number 10 !== number isNaN
 
-function mostraNumero() {
-  // 10 => string 10
-  // 10 => number 10
-  // 10f => number 10 !== number isNaN
+function mostraNumeros() {
   let numero = Number(inputNumero.value);
   let numerosDecrescentes = "";
   let ultimoNumero = "";
@@ -21,4 +16,16 @@ function mostraNumero() {
     inputNumero.focus();
     return;
   }
+
+  for (let index = numero; index > 2; index--) {
+    numerosDecrescentes += `${index}, `;
+  }
+
+  for (let index = numero - 1; index > 0; index--) {
+    ultimoNumero = `${index}`;
+  }
+
+  outNumero.textContent = `Enter ${numero} e 1: ${numerosDecrescentes} ${ultimoNumero}.`;
 }
+
+btnNumeroDecrescente.addEventListener("click", mostraNumeros);
