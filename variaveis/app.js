@@ -1,22 +1,16 @@
-/* Escopo global e local */
-
-/* Escopo, redeclaração e hoisting */
-var nome = "Wiliamis Sampaio";
+var nome = "Wiliamis";
 
 function retornaNome() {
-  /* O escopo local primeiro verifica se 
-    existe uma varíavel local */
-
+  var nome = "Sampaio";
   return nome;
 }
 
-function retornaNomeTeste() {
-  var nome = "Wiliamis Sampaio";
+/* console.log(nome) Output: Wiliamis */
+
+function retornaNome() {
+  nome = "Sampaio";
   return nome;
 }
 
-console.log(retornaNome());
-
-/* let */
-
-/* const */
+retornaNome(); /* Sampaio */
+console.log(nome); /* Sampaio */
