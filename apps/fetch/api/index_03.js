@@ -1,5 +1,3 @@
-import users from "./index_02"
-
 async function getData() {
     const resutConvert = await fetch(users)
     .then(response => response.json())
