@@ -6,13 +6,18 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "dev": "node --watch --no-warnings index.js"
+    "dev": "node --watch --no-warnings index.js",
+    "start": "tsx watch typescript/app.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.56.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "tsx": "^4.19.3"
   }
 }
