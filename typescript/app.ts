@@ -8,3 +8,8 @@ function saveUserToDatabase(user: User) {
 
     console.log(user)
 }
+
+saveUserToDatabase({
+    name: 'Wiliamis',
+    age: 27
+})
