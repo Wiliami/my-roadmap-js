@@ -1,3 +1,8 @@
+interface User {
+    name: string
+    age: number
+}
+
 class UserAccount {
     name: string
     age: number
@@ -16,14 +21,15 @@ function deleteAccountUser(user: User) {
     console.log(user)
 }
 
+function getAdminUser(user: User) {
+    console.log(user)
+}
+
+
 deleteAccountUser({
     name: "Wiliamis",
     age: 27
 })
-
-function getAdminUser(user: User) {
-    console.log(user)
-}
 
 getAdminUser({
     name: 'Humberto Santos de Oliveira',
