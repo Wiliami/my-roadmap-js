@@ -14,7 +14,7 @@ const isJustineIsAnAdult = isAdult(justine)
 
 
 function showUserScreen(user: string): string {
-    return "Hello " + user
+    return `Hello, ${user}`
 }
 
 console.log(showUserScreen('Wiliamis'))
