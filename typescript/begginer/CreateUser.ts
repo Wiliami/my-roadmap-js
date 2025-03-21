@@ -1,9 +1,12 @@
+/* O uso de interface 
+é indicado quando se trabalha com a criação de objetos
+ */
 interface User {
     name: string
     age: number
 }
 
-class UserAccount {
+class saveUserToDatabase {
     name: string
     age: number
 
@@ -14,15 +17,20 @@ class UserAccount {
 }
 
 
-// const user: User = new UserAccount('Wiliamis', 27)
-// console.log(user)
-
-function deleteAccountUser(user: User) {
+function createUser() {
+    const user: User = new saveUserToDatabase('Wiliamis', 27)
     console.log(user)
 }
 
+createUser()
+
+
+function deleteAccountUser(user: User) {
+    // console.log(user)
+}
+
 function getAdminUser(user: User) {
-    console.log(user)
+    // console.log(user)
 }
 
 
