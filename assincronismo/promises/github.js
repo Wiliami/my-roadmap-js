@@ -1,8 +1,14 @@
 async function pegaDados() {
-    const resultado = await fetch('https://dummyjson.com/users/1')
+    const resultado = await fetch('https://api.github.com/users/Wiliami')
     const resultadoConvertido = await resultado.json()
     
-    console.log(resultadoConvertido)
+    // console.log(resultadoConvertido);
+
+    const { name, bio  } = resultadoConvertido;
+    console.log({
+        name,
+        bio
+    })
 }
 
 pegaDados()
