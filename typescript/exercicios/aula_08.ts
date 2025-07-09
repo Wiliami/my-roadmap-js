@@ -45,3 +45,7 @@ async function fetchData(): Promise<Users>{
         email: 'wiliamis@gmail.com'
     }
 }
+
+
+
+await new Promise((resolve) => setTimeout())
