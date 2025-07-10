@@ -32,16 +32,32 @@
 
 // console.log(sum(1, 1, 1))
 
-type Users = {
-    id: number
-    name: string
-    email: string
+// type Users = {
+//     id: number
+//     name: string
+//     email: string
+// }
+
+// async function fetchData(): Promise<Users>{
+//     return {
+//         id: 1,
+//         name: 'Wiliamis',
+//         email: 'wiliamis@gmail.com'
+//     }
+// }
+
+
+
+async function getGithubRepos() {
+    const response = await fetch('https://api.github.com/users/Wiliami')
+    
+    if(!response.ok) {
+        throw new Error(`❌ Erro ao buscar repositórios: ${response.statusText}`)
+    }
+
+
+    return await response.json()
 }
 
-async function fetchData(): Promise<Users>{
-    return {
-        id: 1,
-        name: 'Wiliamis',
-        email: 'wiliamis@gmail.com'
-    }
-}
+
+console.log(getGithubRepos().catch(console.error))
