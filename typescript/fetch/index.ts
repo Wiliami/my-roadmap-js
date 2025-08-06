@@ -22,19 +22,17 @@ async function getProfileUserGithub(): Promise<User | undefined> {
     }
 }
  interface Letter {
-    result: string
+    result: []
  }
 
-async function getLetras(): Promise<Letter> {
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+async function getLetras() {
+    //await new Promise((resolve) => setTimeout(resolve, 2000))
 
     const arr = ['a', 'b', 'c', 'd', 'e', 'f']
 
     const result = arr.map(letter => {
-        console.log(letter)
+        return letter
     })
-
-    return result
 }
 
 async function getUsers() {
