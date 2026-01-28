@@ -5,4 +5,4 @@ function getName() {
     let nome = 'dudu'; 
 }
 
-getName()
+getName() // ReferenceError: Cannot access 'nome2' before initialization
