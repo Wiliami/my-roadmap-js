@@ -1,10 +1,10 @@
 // callback: É uma função que é passada como argumento pra outra função
-function saudacao(nome, callback) {
+function saudacaoo(nome, callback) {
     console.log(`Olá, ${nome}`)
     callback()
 }
 
-function despedida() {
+function despedidaa() {
     console.log('Tchau!')
 }
 
