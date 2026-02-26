@@ -4,7 +4,7 @@ function UserException(message) {
 }
 
 function getMonthName(mo) {
-    mo = mo - 1
+    mo = mo - 1 // expressão retornada: 1 - 1 = 0
     var months = [
         "Jan",
         "Feb",
@@ -21,22 +21,20 @@ function getMonthName(mo) {
     ]
     
     if(months[mo] !== undefined) {
-        return months[0]
-
+        return months[0] // undefined
     } else {
         throw new UserException("InvalidMonthNo")
     }
 }
 
+function logMyErrors(message, name) {
+    console.error(`${message}, ${name}`)
+}
 
 let monthName;
 
-function logMyErrors(message, name) {
-    console.error(message, name)
-}
-
 try {
-    var myMonth = 1;
+    var myMonth = 2;
     monthName = getMonthName(myMonth);
 } catch (err) {
     monthName = "unknown";
@@ -44,4 +42,3 @@ try {
 }
 
 
-console.log(getMonthName())
