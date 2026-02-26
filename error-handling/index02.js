@@ -40,5 +40,3 @@ try {
     monthName = "unknown";
     logMyErrors(err.message, err.name)
 }
-
-
