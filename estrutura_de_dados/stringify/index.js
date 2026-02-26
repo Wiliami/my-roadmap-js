@@ -1,5 +1,5 @@
 const replacer = (key, value) => {
-    if (key === "id") return undefined
+    if (key === "id") return undefined;
   
     return value
 }
