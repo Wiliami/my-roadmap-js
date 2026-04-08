@@ -56,7 +56,7 @@ function GET() {
     try {
         const { name, email } = obj; // req.body
 
-        const { user } = createUser({ name });
+        const { user } = createUser({ name, email });
 
         console.log('Usuário cadastrado com sucesso:', user); 
         return user;
