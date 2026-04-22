@@ -73,3 +73,17 @@ UPDATE EMPLOYEE SET name = 'Clark' WHERE empId = 0001;
 UPDATE EMPLOYEE SET name = 'Dave' WHERE empId = 0002;
 
 COMMIT;
+
+
+
+
+insert into(name, email, password) values("Teste", "teste@gmail.com", "123");
+
+select * from users;
+select name from users where id = 1;
+select email from users where id = 1;
+
+update users set name = "Wiliamis" where user_id = 1;
+update users set email = "wiliamis@gmail.com" where user_id = 1;
+
+delete from users where user_id = 1;
